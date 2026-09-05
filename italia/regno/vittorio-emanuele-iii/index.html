@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Vittorio Emanuele III - Monete</title>
-    <!-- Torna indietro di 3 cartelle per trovare il CSS -->
     <link rel="stylesheet" href="../../../style.css"> 
 </head>
 <body>
@@ -10,13 +9,34 @@
     <h2>Vittorio Emanuele III</h2>
     <hr>
     
-    <p>Clicca sulla moneta per vedere il retro:</p>
-    
-    <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" onclick="giraMoneta(this)">
-    
-    <h3>Valore: [Inserire Valore]</h3>
-    <p><strong>Anno di emissione:</strong> [Inserire Anno]</p>
+    <!-- PRIMO PERIODO O TAGLIO -->
+    <h3>1 Centesimo (1904 - 1915)</h3>
+    <div class="fila-monete">
+        <!-- Moneta 1 -->
+        <div class="moneta-singola">
+            <img src="1cent-1904-fronte.jpg" data-front="1cent-1904-fronte.jpg" data-back="1cent-1904-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+            <p>1 Centesimo 1904</p>
+        </div>
+        <!-- Moneta 2 -->
+        <div class="moneta-singola">
+            <img src="1cent-1915-fronte.jpg" data-front="1cent-1915-fronte.jpg" data-back="1cent-1915-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+            <p>1 Centesimo 1915</p>
+        </div>
+    </div>
 
+    <br>
+
+    <!-- SECONDO PERIODO O TAGLIO -->
+    <h3>2 Centesimi (1908)</h3>
+    <div class="fila-monete">
+        <!-- Moneta 3 -->
+        <div class="moneta-singola">
+            <img src="2cent-1908-fronte.jpg" data-front="2cent-1908-fronte.jpg" data-back="2cent-1908-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+            <p>2 Centesimi 1908</p>
+        </div>
+    </div>
+
+    <!-- Script di rotazione valido per tutte le immagini -->
     <script>
         function giraMoneta(img) {
             let attuale = img.getAttribute('src');

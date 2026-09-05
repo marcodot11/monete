@@ -33,3 +33,17 @@ a:hover {
     text-align: left; /* Allinea il testo di ogni colonna a sinistra */
     font-size: 1.3em;
 }
+/* Contenitore a scorrimento orizzontale per le monete */
+.fila-monete {
+    display: flex;
+    gap: 30px; /* Spazio tra una moneta e l'altra */
+    overflow-x: auto; /* Aggiunge la barra di scorrimento se ci sono troppe monete */
+    padding: 20px 0;
+    justify-content: center; /* Centra le monete se sono poche */
+    align-items: flex-end;
+}
+
+.moneta-singola {
+    text-align: center;
+    flex-shrink: 0;
+}
