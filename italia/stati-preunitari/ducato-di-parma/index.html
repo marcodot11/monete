@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ducato di Parma - Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Le monete di Marco</h1>
+    <h2>Ducato di Parma</h2>
+    <hr>
+    
+    <p>Clicca sulla moneta per vedere il retro:</p>
+    
+    <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" onclick="giraMoneta(this)">
+    
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Italia</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
