@@ -1,0 +1,35 @@
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* Rimuove la sottolineatura blu brutta dai link e li fa diventare bianchi */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Quando passi col mouse sul link, riappare la sottolineatura */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Crea le colonne per la lista delle nazioni */
+.griglia-nazioni {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Il '3' indica il numero di colonne! */
+    gap: 15px; /* Spazio tra una nazione e l'altra */
+    list-style-type: none; /* Toglie i pallini neri della lista */
+    padding: 0;
+    max-width: 600px; /* Evita che le colonne si allarghino troppo sugli schermi grandi */
+    margin: 40px auto; /* Centra tutto il blocco nella pagina */
+    text-align: left; /* Allinea il testo di ogni colonna a sinistra */
+    font-size: 1.3em;
+}

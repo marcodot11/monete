@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Granducato di Toscana - Monete</title>
+    <!-- Torna indietro di 3 cartelle per trovare il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Granducato di Toscana</h1>
+    <h2>Moneta</h2>
+    <hr>
+    
+    <p>Clicca sulla moneta per vedere il retro:</p>
+    
+    <!-- L'immagine della moneta e il codice per farla girare -->
+    <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" onclick="giraMoneta(this)">
+    
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <!-- I vari link per risalire la struttura a ritroso -->
+    <a href="../index.html">Back to Stati Preunitari</a><br>
+    <a href="../../index.html">Back to Italy Main Page</a><br>
+    <a href="../../../index.html">Back to Home</a>
+</body>
+</html>
