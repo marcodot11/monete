@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regno Lombardo-Veneto - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Stati Preunitari</h1>
+    <h2>Regno Lombardo-Veneto</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- PRIMA RIGA: 1 Centesimo 1822 da solo -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h3>1 Centesimo</h3>
+        <img src="1cent-fronte.jpg" data-front="1cent-fronte.jpg" data-back="1cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <p><strong>1822</strong></p>
+    </div>
+
+    <!-- SECONDA RIGA: 3 Centesimi e 5 Centesimi affiancati -->
+    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
+        
+        <!-- Moneta di sinistra -->
+        <div>
+            <h3>3 Centesimi</h3>
+            <img src="3cent-fronte.jpg" data-front="3cent-fronte.jpg" data-back="3cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1852</strong></p>
+        </div>
+
+        <!-- Moneta di destra -->
+        <div>
+            <h3>5 Centesimi</h3>
+            <img src="5cent-fronte.jpg" data-front="5cent-fronte.jpg" data-back="5cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1848</strong></p>
+        </div>
+
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Italia</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
