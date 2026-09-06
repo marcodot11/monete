@@ -47,3 +47,31 @@ a:hover {
     text-align: center;
     flex-shrink: 0;
 }
+/* Stile per i menu con foto circolari (es. Re o Repubbliche) */
+.menu-circolare {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.menu-circolare a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Spazio tra la foto e il nome */
+    font-weight: bold;
+}
+
+.icona-menu {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; /* Ritaglia la foto a cerchio senza schiacciarla */
+    transition: transform 0.2s;
+}
+
+.icona-menu:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente la foto al passaggio del mouse */
+}
