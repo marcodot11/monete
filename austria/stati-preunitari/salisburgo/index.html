@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salisburgo - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Stati Preunitari Austriaci</h1>
+    <h2>Salisburgo</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- MONETA: 20 Kreuzers 1780 -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h3>20 Kreuzers</h3>
+        <img src="20kreuzer-fronte.jpg" data-front="20kreuzer-fronte.jpg" data-back="20kreuzer-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <p><strong>1780</strong></p>
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari Austriaci</a><br>
+    <a href="../../index.html">Torna ad Austria</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
