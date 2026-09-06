@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ducato di Parma - Le mie Monete</title>
+    <title>Ducato di Mantova - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
     <link rel="stylesheet" href="../../../style.css"> 
 </head>
 <body>
-    <h1>Le monete di Marco</h1>
-    <h2>Ducato di Parma</h2>
+    <h1>Stati Preunitari</h1>
+    <h2>Ducato di Mantova</h2>
     <hr>
     
-<p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
 
-    <!-- PRIMA MONETA: 1 Sesino 1788 -->
+    <!-- MONETA: 1 Sesino 1733 -->
     <div style="text-align: center; margin-bottom: 50px;">
         <h3>1 Sesino</h3>
-        <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
-        <p><strong>1788</strong></p>
+        <img src="1sesino-fronte.jpg" data-front="1sesino-fronte.jpg" data-back="1sesino-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <p><strong>1733</strong></p>
     </div>
 
-    <!-- SECONDA MONETA: 10 Soldi 1815 -->
-    <div style="text-align: center; margin-bottom: 50px;">
-        <h3>10 Soldi</h3>
-        <img src="10soldi-fronte.jpg" data-front="10soldi-fronte.jpg" data-back="10soldi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
-        <p><strong>1815</strong></p>
-    </div>
     <script>
         function giraMoneta(img) {
             let attuale = img.getAttribute('src');
