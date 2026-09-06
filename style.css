@@ -75,3 +75,45 @@ a:hover {
 .icona-menu:hover {
     transform: scale(1.1); /* Ingrandisce leggermente la foto al passaggio del mouse */
 }
+/* Stile per l'elenco delle nazioni (stile indice enciclopedico) */
+.lista-nazioni {
+    column-count: 3; /* Crea le 3 colonne come nella foto */
+    column-gap: 40px;
+    list-style-type: none; /* Nasconde i classici puntini elenco */
+    padding: 0;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.lista-nazioni li {
+    margin-bottom: 12px;
+    break-inside: avoid; /* Evita che una voce venga spezzata tra due colonne */
+}
+
+.lista-nazioni a {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spazio tra la bandierina e il nome della nazione */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Stile per le mini bandiere circolari */
+.icona-bandiera {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Adatta le colonne sugli schermi piccoli dei telefoni */
+@media (max-width: 768px) {
+    .lista-nazioni {
+        column-count: 2;
+    }
+}
+@media (max-width: 480px) {
+    .lista-nazioni {
+        column-count: 1;
+    }
+}
