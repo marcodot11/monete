@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contea di Tassarolo - Monete</title>
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Stati Preunitari</h1>
+    <h2>Contea di Tassarolo</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- MONETA: 1 Luigino 1666 -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h3>1 Luigino</h3>
+        <img src="luigino-fronte.jpg" data-front="luigino-fronte.jpg" data-back="luigino-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <p><strong>1666</strong></p>
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Italia</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
