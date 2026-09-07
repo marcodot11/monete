@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regno di Napoli - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Stati Preunitari</h1>
+    <h2>Regno di Napoli</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- PRIMA RIGA: 3 Tornesi e 6 Tornesi affiancati -->
+    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
+        
+        <!-- Moneta di sinistra -->
+        <div>
+            <h3>3 Tornesi</h3>
+            <img src="3tornesi-fronte.jpg" data-front="3tornesi-fronte.jpg" data-back="3tornesi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1790</strong></p>
+        </div>
+
+        <!-- Moneta di destra -->
+        <div>
+            <h3>6 Tornesi</h3>
+            <img src="6tornesi-fronte.jpg" data-front="6tornesi-fronte.jpg" data-back="6tornesi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1801</strong></p>
+        </div>
+
+    </div>
+
+    <!-- SECONDA RIGA: 2 Lire da sola -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h3>2 Lire</h3>
+        <img src="2lire-fronte.jpg" data-front="2lire-fronte.jpg" data-back="2lire-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <p><strong>1813</strong></p>
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Italia</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>

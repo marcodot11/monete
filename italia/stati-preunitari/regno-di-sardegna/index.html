@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regno di Sardegna - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <h1>Stati Preunitari</h1>
+    <h2>Regno di Sardegna</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- RIGA UNICA: 1 Centesimo e 1 Lira affiancati -->
+    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
+        
+        <!-- Moneta di sinistra -->
+        <div>
+            <h3>1 Centesimo</h3>
+            <img src="1cent-fronte.jpg" data-front="1cent-fronte.jpg" data-back="1cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1826</strong></p>
+        </div>
+
+        <!-- Moneta di destra -->
+        <div>
+            <h3>1 Lira</h3>
+            <img src="1lira-fronte.jpg" data-front="1lira-fronte.jpg" data-back="1lira-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1825</strong></p>
+        </div>
+
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Italia</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
