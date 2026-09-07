@@ -122,3 +122,9 @@ a:hover {
         column-count: 1;
     }
 }
+/* Rimpicciolisce tutte le immagini delle monete che hanno l'animazione fronte/retro */
+img[data-front] {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
