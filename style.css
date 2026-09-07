@@ -1,9 +1,14 @@
 body {
-    background-color: #0d0d0d;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 50px;
+    /* Imposta l'immagine di sfondo con un filtro scuro (gradient) sopra */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('sfondo.jpg');
+    background-size: cover; /* Fa in modo che l'immagine copra tutto lo schermo */
+    background-position: center; /* Centra l'immagine */
+    background-attachment: fixed; /* Mantiene lo sfondo fermo mentre scorri la pagina verso il basso */
+    color: white; /* Assicura che tutto il testo sia bianco */
+    font-family: Arial, sans-serif; /* Mantieni il tuo font, questo è un esempio */
+    margin: 0;
+    padding: 20px;
+}
 }
 img {
     width: 250px;
@@ -65,8 +70,8 @@ a:hover {
 }
 
 .icona-menu {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover; /* Ritaglia la foto a cerchio senza schiacciarla */
     transition: transform 0.2s;
