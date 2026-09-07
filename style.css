@@ -128,3 +128,17 @@ img[data-front] {
     height: 180px;
     object-fit: cover;
 }
+/* --- OTTIMIZZAZIONE PER SMARTPHONE --- */
+@media (max-width: 600px) {
+    /* Trova i blocchi in cui abbiamo affiancato le monete e riduce gli spazi enormi */
+    div[style*="display: flex"] {
+        gap: 20px !important; 
+        flex-wrap: wrap !important;
+    }
+
+    /* Rimpicciolisce leggermente le monete solo sui telefoni per farle entrare bene affiancate */
+    img[data-front] {
+        width: 110px !important;
+        height: 110px !important;
+    }
+}
