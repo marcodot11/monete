@@ -130,18 +130,17 @@ img[data-front] {
 }
 /* --- OTTIMIZZAZIONE PER SMARTPHONE --- */
 @media (max-width: 600px) {
-    /* Usiamo "*=flex" per intercettare infallibilmente tutte le righe di monete */
-    div[style*="flex"] {
+    /* L'asterisco cattura QUALSIASI tag HTML che usa il flex, non solo i div! */
+    *[style*="flex"] {
         gap: 15px !important; 
         flex-wrap: wrap !important;
         justify-content: center !important;
-        max-width: 100vw !important; /* Impedisce alla riga di essere più larga dello schermo */
-        overflow-x: hidden !important; /* Evita lo sbordamento laterale */
+        max-width: 100vw !important;
     }
 
-    /* Rimpicciolisce leggermente le monete sui telefoni per farne entrare 2 o 3 per riga comodamente */
     img[data-front] {
         width: 100px !important;
         height: 100px !important;
     }
+}
 }
