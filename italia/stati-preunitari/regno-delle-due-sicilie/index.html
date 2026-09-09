@@ -10,52 +10,54 @@
     <h1>Stati Preunitari</h1>
     <h2>Regno delle Due Sicilie</h2>
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
 
-    <!-- PRIMA RIGA: 5 Monete affiancate (Ferdinando II) -->
+<p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- RE FERDINANDO II -->
+    <h3 style="text-align: center; margin-top: 40px;">Ferdinando II</h3>
     <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
         
         <div>
-            <h3>½ Tornese</h3>
+            <h4>½ Tornese</h4>
             <img src="mezzo-tornese-1846-fronte.jpg" data-front="mezzo-tornese-1846-fronte.jpg" data-back="mezzo-tornese-1846-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1846</strong></p>
         </div>
 
         <div>
-            <h3>2 Tornesi</h3>
+            <h4>2 Tornesi</h4>
             <img src="2tornesi-1858-fronte.jpg" data-front="2tornesi-1858-fronte.jpg" data-back="2tornesi-1858-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1858</strong></p>
         </div>
 
         <div>
-            <h3>10 Tornesi</h3>
+            <h4>10 Tornesi</h4>
             <img src="10tornesi-1848-fronte.jpg" data-front="10tornesi-1848-fronte.jpg" data-back="10tornesi-1848-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1848</strong></p>
         </div>
 
         <div>
-            <h3>120 Grana</h3>
+            <h4>120 Grana</h4>
             <img src="120grana-1836-fronte.jpg" data-front="120grana-1836-fronte.jpg" data-back="120grana-1836-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1836</strong></p>
         </div>
 
         <div>
-            <h3>120 Grana</h3>
+            <h4>120 Grana</h4>
             <img src="120grana-1857-fronte.jpg" data-front="120grana-1857-fronte.jpg" data-back="120grana-1857-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1857</strong></p>
         </div>
 
     </div>
 
-    <!-- SECONDA RIGA: 2 Tornesi da sola (Francesco II) -->
+    <!-- RE FRANCESCO II -->
+    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Francesco II</h3>
     <div style="text-align: center; margin-bottom: 50px;">
-        <h3>2 Tornesi</h3>
+        <h4>2 Tornesi</h4>
         <img src="2tornesi-1859-fronte.jpg" data-front="2tornesi-1859-fronte.jpg" data-back="2tornesi-1859-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
         <p><strong>1859</strong></p>
     </div>
-
-    <script>
+    </script>
+<script>
         function giraMoneta(img) {
             let attuale = img.getAttribute('src');
             let fronte = img.getAttribute('data-front');
@@ -68,7 +70,6 @@
             }
         }
     </script>
-
     <br><br><hr>
     <a href="../index.html">Torna a Stati Preunitari</a><br>
     <a href="../../index.html">Torna a Italia</a><br>
