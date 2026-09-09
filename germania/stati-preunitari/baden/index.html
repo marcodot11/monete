@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baden - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Stati Preunitari Tedeschi</h1>
+    <h2>Baden</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- GRANDUCA FEDERICO I -->
+    <h3 style="text-align: center; margin-top: 40px;">Granduca Federico I</h3>
+    
+    <!-- Inizio contenitore flessibile delle monete -->
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 1 Kreuzer 1871 -->
+        <div>
+            <h4>1 Kreuzer</h4>
+            <img src="1kreuzer-1871-fronte.jpg" data-front="1kreuzer-1871-fronte.jpg" data-back="1kreuzer-1871-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1871</strong></p>
+        </div>
+
+        <!-- 2 Mark 1906 -->
+        <div>
+            <h4>2 Mark</h4>
+            <img src="2mark-1906-fronte.jpg" data-front="2mark-1906-fronte.jpg" data-back="2mark-1906-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1906</strong></p>
+        </div>
+
+    </div> <!-- Fine contenitore flessibile delle monete (era questo che si era perso!) -->
+
+    <!-- Script per girare le monete -->
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Germania</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
