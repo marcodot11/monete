@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assia-Cassel - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Stati Preunitari Tedeschi</h1>
+    <h2>Assia-Cassel</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- PRINCIPE ELETTORE FEDERICO GUGLIELMO -->
+    <h3 style="text-align: center; margin-top: 40px;">Principe Elettore Federico Guglielmo</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 3 Heller 1850 -->
+        <div>
+            <h4>3 Heller</h4>
+            <img src="3heller-1850-fronte.jpg" data-front="3heller-1850-fronte.jpg" data-back="3heller-1850-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1850</strong></p>
+        </div>
+
+        <!-- 1 Silbergroschen 1851 -->
+        <div>
+            <h4>1 Silbergroschen</h4>
+            <img src="1silbergroschen-1851-fronte.jpg" data-front="1silbergroschen-1851-fronte.jpg" data-back="1silbergroschen-1851-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1851</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Script per girare le monete -->
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Germania</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sassonia (Regno) - Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Stati Preunitari Tedeschi</h1>
+    <h2>Sassonia (Regno)</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- RE GIOVANNI -->
+    <h3 style="text-align: center; margin-top: 40px;">Re Giovanni</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 5 Pfennige 1862 -->
+        <div>
+            <h4>5 Pfennige</h4>
+            <img src="5pfennige-1862-fronte.jpg" data-front="5pfennige-1862-fronte.jpg" data-back="5pfennige-1862-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1862</strong></p>
+        </div>
+
+    </div>
+
+    <!-- RE FEDERICO AUGUSTO III -->
+    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Re Federico Augusto III</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 3 Mark 1913 -->
+        <div>
+            <h4>3 Mark</h4>
+            <img src="3mark-1913-fronte.jpg" data-front="3mark-1913-fronte.jpg" data-back="3mark-1913-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1913</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Script per girare le monete -->
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Stati Preunitari</a><br>
+    <a href="../../index.html">Torna a Germania</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
