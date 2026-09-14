@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amburgo - Notgeld</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Germania</h1>
+    <h2>Notgeld - Amburgo</h2>
+    <hr>
+    
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- CITTÀ LIBERA E ANSEATICA DI AMBURGO -->
+    <h3 style="text-align: center; margin-top: 40px;">Citta' Libera e Anseatica di Amburgo</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 5/100 Verrechnungsmarke 1923 -->
+        <div>
+            <h4>5/100 Verrechnungsmarke</h4>
+            <img src="5-100verrechnungsmarke-1923-fronte.jpg" data-front="5-100verrechnungsmarke-1923-fronte.jpg" data-back="5-100verrechnungsmarke-1923-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1923</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Script per girare le monete -->
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Notgeld</a><br>
+    <a href="../../index.html">Torna a Germania</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
