@@ -13,25 +13,42 @@
     
     <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
 
-    <!-- RIGA UNICA: 1 Centesimo e 1 Lira affiancati -->
-    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
+    <!-- VITTORIO AMEDEO III -->
+    <h3 style="text-align: center; margin-top: 40px;">Vittorio Amedeo III</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
         
-        <!-- Moneta di sinistra -->
+        <!-- 20 Soldi -->
         <div>
-            <h3>1 Centesimo</h3>
+            <h4>20 Soldi</h4>
+            <img src="20soldi-1796-fronte.jpg" data-front="20soldi-1796-fronte.jpg" data-back="20soldi-1796-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1796</strong></p>
+        </div>
+
+    </div>
+
+    <!-- CARLO FELICE -->
+    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Carlo Felice</h3>
+    
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <!-- 1 Centesimo -->
+        <div>
+            <h4>1 Centesimo</h4>
             <img src="1cent-fronte.jpg" data-front="1cent-fronte.jpg" data-back="1cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1826</strong></p>
         </div>
 
-        <!-- Moneta di destra -->
+        <!-- 1 Lira -->
         <div>
-            <h3>1 Lira</h3>
+            <h4>1 Lira</h4>
             <img src="1lira-fronte.jpg" data-front="1lira-fronte.jpg" data-back="1lira-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1825</strong></p>
         </div>
 
     </div>
 
+    <!-- Script per girare le monete -->
     <script>
         function giraMoneta(img) {
             let attuale = img.getAttribute('src');
