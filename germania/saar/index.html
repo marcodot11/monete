@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saar - Monete</title>
+    <link rel="stylesheet" href="../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Germania</h1>
+    <h2>Protettorato della Saar (1947-1959)</h2>
+    <hr>
+    
+    <p style="text-align: center; margin-bottom: 40px;">Clicca sulle monete per vedere il retro</p>
+
+    <!-- ========================================== -->
+    <!-- SAAR (FRANKEN)                             -->
+    <!-- ========================================== -->
+    <h3 style="text-align: center; margin-top: 50px; font-size: 1.5em;">Monetazione in Franken</h3>
+    
+    <!-- 10 Franken -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">10 Franken</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="10franken-fronte.jpg" data-front="10franken-fronte.jpg" data-back="10franken-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1954</strong></p>
+        </div>
+    </div>
+
+    <!-- 20 Franken -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">20 Franken</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="20franken-fronte.jpg" data-front="20franken-fronte.jpg" data-back="20franken-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1954</strong></p>
+        </div>
+    </div>
+
+    <!-- 50 Franken -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">50 Franken</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="50franken-fronte.jpg" data-front="50franken-fronte.jpg" data-back="50franken-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1954</strong></p>
+        </div>
+    </div>
+
+    <!-- 100 Franken -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">100 Franken</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 80px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="100franken-fronte.jpg" data-front="100franken-fronte.jpg" data-back="100franken-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1955</strong></p>
+        </div>
+    </div>
+
+    <!-- Script per girare le monete -->
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Germania</a><br>
+    <a href="../../index.html">Torna alla Home</a>
+</body>
+</html>

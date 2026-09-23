@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Occupazione Tedesca WWI - Belgio</title>
+    <link rel="stylesheet" href="../../../style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Belgio</h1>
+    <h2>Monarchia (Occupazione Tedesca)</h2>
+    <hr>
+    
+    <p style="text-align: center; margin-bottom: 40px;">Clicca sulle monete per vedere il retro</p>
+
+    <h3 style="text-align: center; margin-top: 50px; font-size: 1.5em;">Occupazione Tedesca (1914 - 1918)</h3>
+    
+    <!-- 5 Centimes -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">5 Centimes</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="5centimes-fronte.jpg" data-front="5centimes-fronte.jpg" data-back="5centimes-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>Anno</strong></p>
+        </div>
+    </div>
+
+    <!-- 10 Centimes -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">10 Centimes</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="10centimes-fronte.jpg" data-front="10centimes-fronte.jpg" data-back="10centimes-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>Anno</strong></p>
+        </div>
+    </div>
+
+    <!-- 25 Centimes -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">25 Centimes</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="25centimes-fronte.jpg" data-front="25centimes-fronte.jpg" data-back="25centimes-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>Anno</strong></p>
+        </div>
+    </div>
+
+    <!-- 50 Centimes -->
+    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">50 Centimes</h4>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 80px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <img src="50centimes-fronte.jpg" data-front="50centimes-fronte.jpg" data-back="50centimes-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>Anno</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function giraMoneta(img) {
+            let attuale = img.getAttribute('src');
+            let fronte = img.getAttribute('data-front');
+            let retro = img.getAttribute('data-back');
+
+            if (attuale === fronte) {
+                img.setAttribute('src', retro);
+            } else {
+                img.setAttribute('src', fronte);
+            }
+        }
+    </script>
+
+    <br><br><hr>
+    <a href="../index.html">Torna a Monarchia</a><br>
+    <a href="../../index.html">Torna a Belgio</a><br>
+    <a href="../../../index.html">Torna alla Home</a>
+</body>
+</html>
