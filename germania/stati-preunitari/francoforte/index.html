@@ -14,17 +14,25 @@
     <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
 
     <!-- CITTÀ LIBERA -->
-    <h3 style="text-align: center; margin-top: 40px;">Citta' Libera</h3>
+    <h3 style="text-align: center; margin-top: 40px;">Città Libera</h3>
     
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
-        <!-- 1 Judenpfennig 1819 -->
+    <!-- 20 Kreuzer 1764 (NUOVA MONETA SOPRA) -->
+    <div style="display: flex; justify-content: center; margin-bottom: 40px; text-align: center;">
+        <div>
+            <h4>20 Kreuzer</h4>
+            <img src="20kreuzer-fronte.jpg" data-front="20kreuzer-fronte.jpg" data-back="20kreuzer-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1764</strong></p>
+        </div>
+    </div>
+
+    <!-- 1 Judenpfennig 1819 (MONETA ESISTENTE SOTTO) -->
+    <div style="display: flex; justify-content: center; margin-bottom: 50px; text-align: center;">
         <div>
             <h4>1 Judenpfennig</h4>
-            <img src="1judenpfennig-1819-fronte.jpg" data-front="1judenpfennig-1819-fronte.jpg" data-back="1judenpfennig-1819-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <!-- Sostituisci "1judenpfennig-fronte.jpg" con il nome esatto del tuo file se è diverso -->
+            <img src="1judenpfennig-fronte.jpg" data-front="1judenpfennig-fronte.jpg" data-back="1judenpfennig-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
             <p><strong>1819</strong></p>
         </div>
-
     </div>
 
     <!-- Script per girare le monete -->
