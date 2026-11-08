@@ -1,245 +1,237 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Vittorio Emanuele III - Monete</title>
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vittorio Emanuele III · Italia · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Regno d'Italia</h1>
-    <h2>Vittorio Emanuele III</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Regno (1861-1946)</a></li><li aria-current="page">Vittorio Emanuele III</li></ol></nav>
+    <h1>Vittorio Emanuele III</h1>
+
     <hr>
-    
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
+
     <!-- 1 CENTESIMO (2 Monete) -->
-    <h3>1 Centesimo</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="1cent-1-fronte.jpg" data-front="1cent-1-fronte.jpg" data-back="1cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">1 Centesimo</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="1cent-1-fronte.jpg" data-front="1cent-1-fronte.jpg" data-back="1cent-1-retro.jpg" class="moneta" alt="1 Centesimo 1902-1908 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1902-1908</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1cent-2-fronte.jpg" data-front="1cent-2-fronte.jpg" data-back="1cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1cent-2-fronte.jpg" data-front="1cent-2-fronte.jpg" data-back="1cent-2-retro.jpg" class="moneta" alt="1 Centesimo 1908-1918 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1918</p>
         </div>
     </div>
 
     <!-- 2 CENTESIMI (2 Monete) -->
-    <h3>2 Centesimi</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="2cent-1-fronte.jpg" data-front="2cent-1-fronte.jpg" data-back="2cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">2 Centesimi</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="2cent-1-fronte.jpg" data-front="2cent-1-fronte.jpg" data-back="2cent-1-retro.jpg" class="moneta" alt="2 Centesimi 1903-1908 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1903-1908</p>
         </div>
-        <div class="moneta-singola">
-            <img src="2cent-2-fronte.jpg" data-front="2cent-2-fronte.jpg" data-back="2cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="2cent-2-fronte.jpg" data-front="2cent-2-fronte.jpg" data-back="2cent-2-retro.jpg" class="moneta" alt="2 Centesimi 1908-1917 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1917</p>
         </div>
     </div>
 
     <!-- 5 CENTESIMI (4 Monete) -->
     <h3>5 Centesimi</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="5cent-1-fronte.jpg" data-front="5cent-1-fronte.jpg" data-back="5cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="5cent-1-fronte.jpg" data-front="5cent-1-fronte.jpg" data-back="5cent-1-retro.jpg" class="moneta" alt="5 Centesimi 1908-1918 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1918</p>
         </div>
-        <div class="moneta-singola">
-            <img src="5cent-2-fronte.jpg" data-front="5cent-2-fronte.jpg" data-back="5cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="5cent-2-fronte.jpg" data-front="5cent-2-fronte.jpg" data-back="5cent-2-retro.jpg" class="moneta" alt="5 Centesimi 1919-1937 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1919-1937</p>
         </div>
-        <div class="moneta-singola">
-            <img src="5cent-3-fronte.jpg" data-front="5cent-3-fronte.jpg" data-back="5cent-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="5cent-3-fronte.jpg" data-front="5cent-3-fronte.jpg" data-back="5cent-3-retro.jpg" class="moneta" alt="5 Centesimi 1936-1939 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1936-1939</p>
         </div>
-        <div class="moneta-singola">
-            <img src="5cent-4-fronte.jpg" data-front="5cent-4-fronte.jpg" data-back="5cent-4-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="5cent-4-fronte.jpg" data-front="5cent-4-fronte.jpg" data-back="5cent-4-retro.jpg" class="moneta" alt="5 Centesimi 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 10 CENTESIMI (4 Monete) -->
     <h3>10 Centesimi</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="10cent-1-fronte.jpg" data-front="10cent-1-fronte.jpg" data-back="10cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="10cent-1-fronte.jpg" data-front="10cent-1-fronte.jpg" data-back="10cent-1-retro.jpg" class="moneta" alt="10 Centesimi 1911 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1911</p>
         </div>
-        <div class="moneta-singola">
-            <img src="10cent-2-fronte.jpg" data-front="10cent-2-fronte.jpg" data-back="10cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="10cent-2-fronte.jpg" data-front="10cent-2-fronte.jpg" data-back="10cent-2-retro.jpg" class="moneta" alt="10 Centesimi 1919-1937 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1919-1937</p>
         </div>
-        <div class="moneta-singola">
-            <img src="10cent-3-fronte.jpg" data-front="10cent-3-fronte.jpg" data-back="10cent-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="10cent-3-fronte.jpg" data-front="10cent-3-fronte.jpg" data-back="10cent-3-retro.jpg" class="moneta" alt="10 Centesimi 1936-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1936-1943</p>
         </div>
-        <div class="moneta-singola">
-            <img src="10cent-4-fronte.jpg" data-front="10cent-4-fronte.jpg" data-back="10cent-4-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="10cent-4-fronte.jpg" data-front="10cent-4-fronte.jpg" data-back="10cent-4-retro.jpg" class="moneta" alt="10 Centesimi 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 20 CENTESIMI (5 Monete) -->
     <h3>20 Centesimi</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="20cent-1-fronte.jpg" data-front="20cent-1-fronte.jpg" data-back="20cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="20cent-1-fronte.jpg" data-front="20cent-1-fronte.jpg" data-back="20cent-1-retro.jpg" class="moneta" alt="20 Centesimi 1908-1935 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1935</p>
         </div>
-        <div class="moneta-singola">
-            <img src="20cent-2-fronte.jpg" data-front="20cent-2-fronte.jpg" data-back="20cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="20cent-2-fronte.jpg" data-front="20cent-2-fronte.jpg" data-back="20cent-2-retro.jpg" class="moneta" alt="20 Centesimi 1918-1920 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1918-1920</p>
         </div>
-        <div class="moneta-singola">
-            <img src="20cent-3-fronte.jpg" data-front="20cent-3-fronte.jpg" data-back="20cent-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="20cent-3-fronte.jpg" data-front="20cent-3-fronte.jpg" data-back="20cent-3-retro.jpg" class="moneta" alt="20 Centesimi 1939-1940 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1940</p>
         </div>
-        <div class="moneta-singola">
-            <img src="20cent-4-fronte.jpg" data-front="20cent-4-fronte.jpg" data-back="20cent-4-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="20cent-4-fronte.jpg" data-front="20cent-4-fronte.jpg" data-back="20cent-4-retro.jpg" class="moneta" alt="20 Centesimi 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 25 CENTESIMI (1 Moneta) -->
-    <h3>25 Centesimi</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="25cent-1-fronte.jpg" data-front="25cent-1-fronte.jpg" data-back="25cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">25 Centesimi</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="25cent-1-fronte.jpg" data-front="25cent-1-fronte.jpg" data-back="25cent-1-retro.jpg" class="moneta" alt="25 Centesimi 1902-1903, 20 Centesimi (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1902-1903</p>
         </div>
     </div>
 
     <!-- 50 CENTESIMI (3 Monete) -->
     <h3>50 Centesimi</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="50cent-1-fronte.jpg" data-front="50cent-1-fronte.jpg" data-back="50cent-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="50cent-1-fronte.jpg" data-front="50cent-1-fronte.jpg" data-back="50cent-1-retro.jpg" class="moneta" alt="50 Centesimi 1919-1935 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1919-1935</p>
         </div>
-        <div class="moneta-singola">
-            <img src="50cent-2-fronte.jpg" data-front="50cent-2-fronte.jpg" data-back="50cent-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="50cent-2-fronte.jpg" data-front="50cent-2-fronte.jpg" data-back="50cent-2-retro.jpg" class="moneta" alt="50 Centesimi 1939-1940 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1940</p>
         </div>
-        <div class="moneta-singola">
-            <img src="50cent-3-fronte.jpg" data-front="50cent-3-fronte.jpg" data-back="50cent-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="50cent-3-fronte.jpg" data-front="50cent-3-fronte.jpg" data-back="50cent-3-retro.jpg" class="moneta" alt="50 Centesimi 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 1 LIRA (6 Monete) -->
     <h3>1 Lira</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="1lira-1-fronte.jpg" data-front="1lira-1-fronte.jpg" data-back="1lira-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="1lira-1-fronte.jpg" data-front="1lira-1-fronte.jpg" data-back="1lira-1-retro.jpg" class="moneta" alt="1 Lira 1901-1907 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1901-1907</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1lira-2-fronte.jpg" data-front="1lira-2-fronte.jpg" data-back="1lira-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1lira-2-fronte.jpg" data-front="1lira-2-fronte.jpg" data-back="1lira-2-retro.jpg" class="moneta" alt="1 Lira 1908-1913 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1913</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1lira-3-fronte.jpg" data-front="1lira-3-fronte.jpg" data-back="1lira-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1lira-3-fronte.jpg" data-front="1lira-3-fronte.jpg" data-back="1lira-3-retro.jpg" class="moneta" alt="1 Lira 1915-1917 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1915-1917</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1lira-4-fronte.jpg" data-front="1lira-4-fronte.jpg" data-back="1lira-4-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1lira-4-fronte.jpg" data-front="1lira-4-fronte.jpg" data-back="1lira-4-retro.jpg" class="moneta" alt="1 Lira 1922-1935 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1922-1935</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1lira-5-fronte.jpg" data-front="1lira-5-fronte.jpg" data-back="1lira-5-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1lira-5-fronte.jpg" data-front="1lira-5-fronte.jpg" data-back="1lira-5-retro.jpg" class="moneta" alt="1 Lira 1939-1940 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1940</p>
         </div>
-        <div class="moneta-singola">
-            <img src="1lira-6-fronte.jpg" data-front="1lira-6-fronte.jpg" data-back="1lira-6-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="1lira-6-fronte.jpg" data-front="1lira-6-fronte.jpg" data-back="1lira-6-retro.jpg" class="moneta" alt="1 Lira 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 2 LIRE (6 Monete) -->
     <h3>2 Lire</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        <div class="moneta-singola">
-            <img src="2lire-1-fronte.jpg" data-front="2lire-1-fronte.jpg" data-back="2lire-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <div class="gruppo-monete">
+        <div>
+            <img src="2lire-1-fronte.jpg" data-front="2lire-1-fronte.jpg" data-back="2lire-1-retro.jpg" class="moneta" alt="2 Lire 1901-1907 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1901-1907</p>
         </div>
-        <div class="moneta-singola">
-            <img src="2lire-2-fronte.jpg" data-front="2lire-2-fronte.jpg" data-back="2lire-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="2lire-2-fronte.jpg" data-front="2lire-2-fronte.jpg" data-back="2lire-2-retro.jpg" class="moneta" alt="2 Lire 1908-1912 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1908-1912</p>
         </div>
-        <div class="moneta-singola">
-            <img src="2lire-3-fronte.jpg" data-front="2lire-3-fronte.jpg" data-back="2lire-3-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="2lire-3-fronte.jpg" data-front="2lire-3-fronte.jpg" data-back="2lire-3-retro.jpg" class="moneta" alt="2 Lire 1911 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1911</p>
         </div>
-        <div class="moneta-singola">
-            <img src="2lire-4-fronte.jpg" data-front="2lire-4-fronte.jpg" data-back="2lire-4-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="2lire-4-fronte.jpg" data-front="2lire-4-fronte.jpg" data-back="2lire-4-retro.jpg" class="moneta" alt="2 Lire 1914-1917 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1914-1917</p>
         </div>
-        <div class="moneta-singola">
-            <img src="2lire-5-fronte.jpg" data-front="2lire-5-fronte.jpg" data-back="2lire-5-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="2lire-5-fronte.jpg" data-front="2lire-5-fronte.jpg" data-back="2lire-5-retro.jpg" class="moneta" alt="2 Lire 1923-1935 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1923-1935</p>
-        </div> 
-        <div class="moneta-singola">
-            <img src="2lire-6-fronte.jpg" data-front="2lire-6-fronte.jpg" data-back="2lire-6-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        </div>
+        <div>
+            <img src="2lire-6-fronte.jpg" data-front="2lire-6-fronte.jpg" data-back="2lire-6-retro.jpg" class="moneta" alt="2 Lire 1939-1943 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1939-1943</p>
         </div>
     </div>
 
     <!-- 5 LIRE (2 Monete) -->
-    <h3>5 Lire</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="5lire-1-fronte.jpg" data-front="5lire-1-fronte.jpg" data-back="5lire-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">5 Lire</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="5lire-1-fronte.jpg" data-front="5lire-1-fronte.jpg" data-back="5lire-1-retro.jpg" class="moneta" alt="5 Lire 1926-1935, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1926-1935</p>
         </div>
-        <div class="moneta-singola">
-            <img src="5lire-2-fronte.jpg" data-front="5lire-2-fronte.jpg" data-back="5lire-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="5lire-2-fronte.jpg" data-front="5lire-2-fronte.jpg" data-back="5lire-2-retro.jpg" class="moneta" alt="5 Lire 1936-1941, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1936-1941</p>
         </div>
     </div>
 
     <!-- 10 LIRE (2 Monete) -->
-    <h3>10 Lire</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="10lire-1-fronte.jpg" data-front="10lire-1-fronte.jpg" data-back="10lire-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">10 Lire</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="10lire-1-fronte.jpg" data-front="10lire-1-fronte.jpg" data-back="10lire-1-retro.jpg" class="moneta" alt="10 Lire 1926-1934, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1926-1934</p>
         </div>
-        <div class="moneta-singola">
-            <img src="10lire-2-fronte.jpg" data-front="10lire-2-fronte.jpg" data-back="10lire-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="10lire-2-fronte.jpg" data-front="10lire-2-fronte.jpg" data-back="10lire-2-retro.jpg" class="moneta" alt="10 Lire 1936-1941, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1936-1941</p>
         </div>
     </div>
 
     <!-- 20 LIRE (2 Monete) -->
-    <h3>20 Lire</h3>
-    <div class="fila-monete">
-        <div class="moneta-singola">
-            <img src="20lire-1-fronte.jpg" data-front="20lire-1-fronte.jpg" data-back="20lire-1-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+    <h4 class="taglio">20 Lire</h4>
+    <div class="gruppo-monete">
+        <div>
+            <img src="20lire-1-fronte.jpg" data-front="20lire-1-fronte.jpg" data-back="20lire-1-retro.jpg" class="moneta" alt="20 Lire 1927-1934, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1927-1934</p>
         </div>
-        <div class="moneta-singola">
-            <img src="20lire-2-fronte.jpg" data-front="20lire-2-fronte.jpg" data-back="20lire-2-retro.jpg" onclick="giraMoneta(this)" width="120" style="border-radius: 50%; cursor: pointer;">
+        <div>
+            <img src="20lire-2-fronte.jpg" data-front="20lire-2-fronte.jpg" data-back="20lire-2-retro.jpg" class="moneta" alt="20 Lire 1928, 2 Lire (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p>1928</p>
         </div>
     </div>
 
     <!-- Script per la rotazione delle monete -->
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
 
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Regno d'Italia</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Regno (1861-1946)</a></li><li aria-current="page">Vittorio Emanuele III</li></ol></nav>
 </body>
 </html>

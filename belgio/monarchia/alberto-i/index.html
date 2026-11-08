@@ -1,125 +1,114 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Alberto I - Belgio</title>
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monarchia (Alberto I) · Belgio · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Belgio</h1>
-    <h2>Monarchia (Alberto I)</h2>
-    <hr>
-    
-    <p style="text-align: center; margin-bottom: 40px;">Clicca sulle monete per vedere il retro</p>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Belgio</a></li><li><a href="../index.html">Monarchia</a></li><li aria-current="page">Alberto I</li></ol></nav>
+    <h1>Monarchia (Alberto I)</h1>
 
-    <h3 style="text-align: center; margin-top: 50px; font-size: 1.5em;">Alberto I (1909 - 1934)</h3>
-    
+    <hr>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
+
+    <h3>Alberto I (1909 - 1934)</h3>
+
     <!-- 1 Centime -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">1 Centime</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="1centime-1-fronte.jpg" data-front="1centime-1-fronte.jpg" data-back="1centime-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1912-1914</strong></p></div>
-        <div><img src="1centime-2-fronte.jpg" data-front="1centime-2-fronte.jpg" data-back="1centime-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1912</strong></p></div>
+    <h4 class="taglio">1 Centime</h4>
+    <div class="gruppo-monete">
+        <div><img src="1centime-1-fronte.jpg" data-front="1centime-1-fronte.jpg" data-back="1centime-1-retro.jpg" class="moneta" alt="1 Centime 1912-1914, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1912-1914</strong></p></div>
+        <div><img src="1centime-2-fronte.jpg" data-front="1centime-2-fronte.jpg" data-back="1centime-2-retro.jpg" class="moneta" alt="1 Centime 1912, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1912</strong></p></div>
     </div>
 
     <!-- 2 Centimes -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">2 Centimes</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="2centimes-1-fronte.jpg" data-front="2centimes-1-fronte.jpg" data-back="2centimes-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1911-1919</strong></p></div>
-        <div><img src="2centimes-2-fronte.jpg" data-front="2centimes-2-fronte.jpg" data-back="2centimes-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1919</strong></p></div>
+    <h4 class="taglio">2 Centimes</h4>
+    <div class="gruppo-monete">
+        <div><img src="2centimes-1-fronte.jpg" data-front="2centimes-1-fronte.jpg" data-back="2centimes-1-retro.jpg" class="moneta" alt="2 Centimes 1911-1919, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1911-1919</strong></p></div>
+        <div><img src="2centimes-2-fronte.jpg" data-front="2centimes-2-fronte.jpg" data-back="2centimes-2-retro.jpg" class="moneta" alt="2 Centimes 1910-1919, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1919</strong></p></div>
     </div>
 
     <!-- 5 Centimes -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">5 Centimes</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="5centimes-1-fronte.jpg" data-front="5centimes-1-fronte.jpg" data-back="5centimes-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1932</strong></p></div>
-        <div><img src="5centimes-2-fronte.jpg" data-front="5centimes-2-fronte.jpg" data-back="5centimes-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1931</strong></p></div>
-        <div><img src="5centimes-3-fronte.jpg" data-front="5centimes-3-fronte.jpg" data-back="5centimes-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1932</strong></p></div>
-        <div><img src="5centimes-4-fronte.jpg" data-front="5centimes-4-fronte.jpg" data-back="5centimes-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930-1931</strong></p></div>
+    <h4 class="taglio">5 Centimes</h4>
+    <div class="gruppo-monete">
+        <div><img src="5centimes-1-fronte.jpg" data-front="5centimes-1-fronte.jpg" data-back="5centimes-1-retro.jpg" class="moneta" alt="5 Centimes 1910-1932, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1932</strong></p></div>
+        <div><img src="5centimes-2-fronte.jpg" data-front="5centimes-2-fronte.jpg" data-back="5centimes-2-retro.jpg" class="moneta" alt="5 Centimes 1910-1931, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1931</strong></p></div>
+        <div><img src="5centimes-3-fronte.jpg" data-front="5centimes-3-fronte.jpg" data-back="5centimes-3-retro.jpg" class="moneta" alt="5 Centimes 1932, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1932</strong></p></div>
+        <div><img src="5centimes-4-fronte.jpg" data-front="5centimes-4-fronte.jpg" data-back="5centimes-4-retro.jpg" class="moneta" alt="5 Centimes 1930-1931, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930-1931</strong></p></div>
     </div>
 
     <!-- 10 Centimes -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">10 Centimes</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="10centimes-1-fronte.jpg" data-front="10centimes-1-fronte.jpg" data-back="10centimes-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1911-1929</strong></p></div>
-        <div><img src="10centimes-2-fronte.jpg" data-front="10centimes-2-fronte.jpg" data-back="10centimes-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1911-1929</strong></p></div>
-        <div><img src="10centimes-3-fronte.jpg" data-front="10centimes-3-fronte.jpg" data-back="10centimes-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930-1932</strong></p></div>
-        <div><img src="10centimes-4-fronte.jpg" data-front="10centimes-4-fronte.jpg" data-back="10centimes-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930-1931</strong></p></div>
+    <h4 class="taglio">10 Centimes</h4>
+    <div class="gruppo-monete">
+        <div><img src="10centimes-1-fronte.jpg" data-front="10centimes-1-fronte.jpg" data-back="10centimes-1-retro.jpg" class="moneta" alt="10 Centimes 1911-1929, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1911-1929</strong></p></div>
+        <div><img src="10centimes-2-fronte.jpg" data-front="10centimes-2-fronte.jpg" data-back="10centimes-2-retro.jpg" class="moneta" alt="10 Centimes 1911-1929, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1911-1929</strong></p></div>
+        <div><img src="10centimes-3-fronte.jpg" data-front="10centimes-3-fronte.jpg" data-back="10centimes-3-retro.jpg" class="moneta" alt="10 Centimes 1930-1932, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930-1932</strong></p></div>
+        <div><img src="10centimes-4-fronte.jpg" data-front="10centimes-4-fronte.jpg" data-back="10centimes-4-retro.jpg" class="moneta" alt="10 Centimes 1930-1931, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930-1931</strong></p></div>
     </div>
 
     <!-- 25 Centimes -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">25 Centimes</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="25centimes-1-fronte.jpg" data-front="25centimes-1-fronte.jpg" data-back="25centimes-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1913-1929</strong></p></div>
-        <div><img src="25centimes-2-fronte.jpg" data-front="25centimes-2-fronte.jpg" data-back="25centimes-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1929</strong></p></div>
+    <h4 class="taglio">25 Centimes</h4>
+    <div class="gruppo-monete">
+        <div><img src="25centimes-1-fronte.jpg" data-front="25centimes-1-fronte.jpg" data-back="25centimes-1-retro.jpg" class="moneta" alt="25 Centimes 1913-1929, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1913-1929</strong></p></div>
+        <div><img src="25centimes-2-fronte.jpg" data-front="25centimes-2-fronte.jpg" data-back="25centimes-2-retro.jpg" class="moneta" alt="25 Centimes 1910-1929, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1929</strong></p></div>
     </div>
 
     <!-- 50 Centimes -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">50 Centimes</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="50centimes-1-fronte.jpg" data-front="50centimes-1-fronte.jpg" data-back="50centimes-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1912</strong></p></div>
-        <div><img src="50centimes-2-fronte.jpg" data-front="50centimes-2-fronte.jpg" data-back="50centimes-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1914</strong></p></div>
-        <div><img src="50centimes-3-fronte.jpg" data-front="50centimes-3-fronte.jpg" data-back="50centimes-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1922-1933</strong></p></div>
-        <div><img src="50centimes-4-fronte.jpg" data-front="50centimes-4-fronte.jpg" data-back="50centimes-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1923-1934</strong></p></div>
+    <h4 class="taglio">50 Centimes</h4>
+    <div class="gruppo-monete">
+        <div><img src="50centimes-1-fronte.jpg" data-front="50centimes-1-fronte.jpg" data-back="50centimes-1-retro.jpg" class="moneta" alt="50 Centimes 1910-1912, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1912</strong></p></div>
+        <div><img src="50centimes-2-fronte.jpg" data-front="50centimes-2-fronte.jpg" data-back="50centimes-2-retro.jpg" class="moneta" alt="50 Centimes 1910-1914, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1914</strong></p></div>
+        <div><img src="50centimes-3-fronte.jpg" data-front="50centimes-3-fronte.jpg" data-back="50centimes-3-retro.jpg" class="moneta" alt="50 Centimes 1922-1933, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1922-1933</strong></p></div>
+        <div><img src="50centimes-4-fronte.jpg" data-front="50centimes-4-fronte.jpg" data-back="50centimes-4-retro.jpg" class="moneta" alt="50 Centimes 1923-1934, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1923-1934</strong></p></div>
     </div>
 
     <!-- 1 Franc -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">1 Franc</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="1franc-1-fronte.jpg" data-front="1franc-1-fronte.jpg" data-back="1franc-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1918</strong></p></div>
-        <div><img src="1franc-2-fronte.jpg" data-front="1franc-2-fronte.jpg" data-back="1franc-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1918</strong></p></div>
-        <div><img src="1franc-3-fronte.jpg" data-front="1franc-3-fronte.jpg" data-back="1franc-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1922-1934</strong></p></div>
-        <div><img src="1franc-4-fronte.jpg" data-front="1franc-4-fronte.jpg" data-back="1franc-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1922-1935</strong></p></div>
+    <h4 class="taglio">1 Franc</h4>
+    <div class="gruppo-monete">
+        <div><img src="1franc-1-fronte.jpg" data-front="1franc-1-fronte.jpg" data-back="1franc-1-retro.jpg" class="moneta" alt="1 Franc 1910-1918, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1918</strong></p></div>
+        <div><img src="1franc-2-fronte.jpg" data-front="1franc-2-fronte.jpg" data-back="1franc-2-retro.jpg" class="moneta" alt="1 Franc 1910-1918, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1918</strong></p></div>
+        <div><img src="1franc-3-fronte.jpg" data-front="1franc-3-fronte.jpg" data-back="1franc-3-retro.jpg" class="moneta" alt="1 Franc 1922-1934, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1922-1934</strong></p></div>
+        <div><img src="1franc-4-fronte.jpg" data-front="1franc-4-fronte.jpg" data-back="1franc-4-retro.jpg" class="moneta" alt="1 Franc 1922-1935, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1922-1935</strong></p></div>
     </div>
 
     <!-- 2 Francs -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">2 Francs</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="2francs-1-fronte.jpg" data-front="2francs-1-fronte.jpg" data-back="2francs-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1910-1912</strong></p></div>
-        <div><img src="2francs-2-fronte.jpg" data-front="2francs-2-fronte.jpg" data-back="2francs-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1911-1912</strong></p></div>
-        <div><img src="2francs-3-fronte.jpg" data-front="2francs-3-fronte.jpg" data-back="2francs-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1923-1930</strong></p></div>
-        <div><img src="2francs-4-fronte.jpg" data-front="2francs-4-fronte.jpg" data-back="2francs-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1923-1930</strong></p></div>
+    <h4 class="taglio">2 Francs</h4>
+    <div class="gruppo-monete">
+        <div><img src="2francs-1-fronte.jpg" data-front="2francs-1-fronte.jpg" data-back="2francs-1-retro.jpg" class="moneta" alt="2 Francs 1910-1912, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1910-1912</strong></p></div>
+        <div><img src="2francs-2-fronte.jpg" data-front="2francs-2-fronte.jpg" data-back="2francs-2-retro.jpg" class="moneta" alt="2 Francs 1911-1912, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1911-1912</strong></p></div>
+        <div><img src="2francs-3-fronte.jpg" data-front="2francs-3-fronte.jpg" data-back="2francs-3-retro.jpg" class="moneta" alt="2 Francs 1923-1930, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1923-1930</strong></p></div>
+        <div><img src="2francs-4-fronte.jpg" data-front="2francs-4-fronte.jpg" data-back="2francs-4-retro.jpg" class="moneta" alt="2 Francs 1923-1930, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1923-1930</strong></p></div>
     </div>
 
     <!-- 5 Francs -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">5 Francs</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="5francs-1-fronte.jpg" data-front="5francs-1-fronte.jpg" data-back="5francs-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930-1934</strong></p></div>
-        <div><img src="5francs-2-fronte.jpg" data-front="5francs-2-fronte.jpg" data-back="5francs-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930-1933</strong></p></div>
+    <h4 class="taglio">5 Francs</h4>
+    <div class="gruppo-monete">
+        <div><img src="5francs-1-fronte.jpg" data-front="5francs-1-fronte.jpg" data-back="5francs-1-retro.jpg" class="moneta" alt="5 Francs 1930-1934, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930-1934</strong></p></div>
+        <div><img src="5francs-2-fronte.jpg" data-front="5francs-2-fronte.jpg" data-back="5francs-2-retro.jpg" class="moneta" alt="5 Francs 1930-1933, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930-1933</strong></p></div>
     </div>
 
     <!-- 10 Francs -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">10 Francs</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: center; flex-wrap: wrap;">
-        <div><img src="10francs-1-fronte.jpg" data-front="10francs-1-fronte.jpg" data-back="10francs-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930</strong></p></div>
-        <div><img src="10francs-2-fronte.jpg" data-front="10francs-2-fronte.jpg" data-back="10francs-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1930</strong></p></div>
+    <h4 class="taglio">10 Francs</h4>
+    <div class="gruppo-monete">
+        <div><img src="10francs-1-fronte.jpg" data-front="10francs-1-fronte.jpg" data-back="10francs-1-retro.jpg" class="moneta" alt="10 Francs 1930, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930</strong></p></div>
+        <div><img src="10francs-2-fronte.jpg" data-front="10francs-2-fronte.jpg" data-back="10francs-2-retro.jpg" class="moneta" alt="10 Francs 1930, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1930</strong></p></div>
     </div>
 
     <!-- 20 Francs -->
-    <h4 style="text-align: left; margin-left: 10%; margin-bottom: 10px;">20 Francs</h4>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 80px; text-align: center; flex-wrap: wrap;">
-        <div><img src="20francs-1-fronte.jpg" data-front="20francs-1-fronte.jpg" data-back="20francs-1-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1931-1932</strong></p></div>
-        <div><img src="20francs-2-fronte.jpg" data-front="20francs-2-fronte.jpg" data-back="20francs-2-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1931-1932</strong></p></div>
-        <div><img src="20francs-3-fronte.jpg" data-front="20francs-3-fronte.jpg" data-back="20francs-3-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1933-1934</strong></p></div>
-        <div><img src="20francs-4-fronte.jpg" data-front="20francs-4-fronte.jpg" data-back="20francs-4-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;"><p><strong>1933-1934</strong></p></div>
+    <h4 class="taglio">20 Francs</h4>
+    <div class="gruppo-monete">
+        <div><img src="20francs-1-fronte.jpg" data-front="20francs-1-fronte.jpg" data-back="20francs-1-retro.jpg" class="moneta" alt="20 Francs 1931-1932, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1931-1932</strong></p></div>
+        <div><img src="20francs-2-fronte.jpg" data-front="20francs-2-fronte.jpg" data-back="20francs-2-retro.jpg" class="moneta" alt="20 Francs 1931-1932, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1931-1932</strong></p></div>
+        <div><img src="20francs-3-fronte.jpg" data-front="20francs-3-fronte.jpg" data-back="20francs-3-retro.jpg" class="moneta" alt="20 Francs 1933-1934, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1933-1934</strong></p></div>
+        <div><img src="20francs-4-fronte.jpg" data-front="20francs-4-fronte.jpg" data-back="20francs-4-retro.jpg" class="moneta" alt="20 Francs 1933-1934, Alberto I (1909 - 1934) (fronte)" width="180" height="180" loading="lazy" decoding="async"><p><strong>1933-1934</strong></p></div>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Monarchia</a><br>
-    <a href="../../index.html">Torna a Belgio</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Belgio</a></li><li><a href="../index.html">Monarchia</a></li><li aria-current="page">Alberto I</li></ol></nav>
 </body>
 </html>

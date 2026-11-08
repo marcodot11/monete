@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Contea di Tassarolo - Monete</title>
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contea di Tassarolo · Italia · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Contea di Tassarolo</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Contea di Tassarolo</li></ol></nav>
+    <h1>Contea di Tassarolo</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- MONETA: 1 Luigino 1666 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>1 Luigino</h3>
-        <img src="luigino-fronte.jpg" data-front="luigino-fronte.jpg" data-back="luigino-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="luigino-fronte.jpg" data-front="luigino-fronte.jpg" data-back="luigino-retro.jpg" class="moneta" alt="1 Luigino 1666 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1666</strong></p>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Contea di Tassarolo</li></ol></nav>
 </body>
 </html>

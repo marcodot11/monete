@@ -1,122 +1,108 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Prussia (Regno) - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prussia (Regno) · Germania · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari Tedeschi</h1>
-    <h2>Prussia (Regno)</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Germania</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Prussia (Regno)</li></ol></nav>
+    <h1>Prussia (Regno)</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- RE FEDERICO GUGLIELMO III -->
-    <h3 style="text-align: center; margin-top: 40px;">Re Federico Guglielmo III</h3>
-    
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
+    <h3>Re Federico Guglielmo III</h3>
+
+    <div class="gruppo-monete">
+
         <!-- 1 Pfennig 1828 -->
         <div>
             <h4>1 Pfennig</h4>
-            <img src="1pfennig-1828-fronte.jpg" data-front="1pfennig-1828-fronte.jpg" data-back="1pfennig-1828-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1pfennig-1828-fronte.jpg" data-front="1pfennig-1828-fronte.jpg" data-back="1pfennig-1828-retro.jpg" class="moneta" alt="1 Pfennig 1828, Re Federico Guglielmo III (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1828</strong></p>
-        </div>        
+        </div>
 
         <!-- 1 Silbergroschen 1825 -->
         <div>
             <h4>1 Silbergroschen</h4>
-            <img src="1silbergroschen-1825-fronte.jpg" data-front="1silbergroschen-1825-fronte.jpg" data-back="1silbergroschen-1825-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1silbergroschen-1825-fronte.jpg" data-front="1silbergroschen-1825-fronte.jpg" data-back="1silbergroschen-1825-retro.jpg" class="moneta" alt="1 Silbergroschen 1825, Re Federico Guglielmo III (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1825</strong></p>
         </div>
-
-
 
     </div>
 
     <!-- RE FEDERICO GUGLIELMO IV -->
-    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Re Federico Guglielmo IV</h3>
-    
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
+    <h3 class="separata">Re Federico Guglielmo IV</h3>
+
+    <div class="gruppo-monete">
+
         <!-- 1 Vereinsthaler 1859 -->
         <div>
             <h4>1 Vereinsthaler</h4>
-            <img src="1vereinsthaler-1859-fronte.jpg" data-front="1vereinsthaler-1859-fronte.jpg" data-back="1vereinsthaler-1859-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1vereinsthaler-1859-fronte.jpg" data-front="1vereinsthaler-1859-fronte.jpg" data-back="1vereinsthaler-1859-retro.jpg" class="moneta" alt="1 Vereinsthaler 1859, Re Federico Guglielmo IV (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1859</strong></p>
         </div>
 
     </div>
 
     <!-- RE GUGLIELMO I -->
-    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Re Guglielmo I</h3>
-    
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
+    <h3 class="separata">Re Guglielmo I</h3>
+
+    <div class="gruppo-monete">
+
         <!-- 3 Pfennige 1872 -->
         <div>
             <h4>3 Pfennige</h4>
-            <img src="3pfennige-1872-fronte.jpg" data-front="3pfennige-1872-fronte.jpg" data-back="3pfennige-1872-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="3pfennige-1872-fronte.jpg" data-front="3pfennige-1872-fronte.jpg" data-back="3pfennige-1872-retro.jpg" class="moneta" alt="3 Pfennige 1872, Re Guglielmo I (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1872</strong></p>
         </div>
 
     </div>
 
     <!-- RE GUGLIELMO II -->
-    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Re Guglielmo II</h3>
-    
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
+    <h3 class="separata">Re Guglielmo II</h3>
+
+    <div class="gruppo-monete">
+
         <!-- 2 Mark 1901 -->
         <div>
             <h4>2 Mark</h4>
-            <img src="2mark-1901-fronte.jpg" data-front="2mark-1901-fronte.jpg" data-back="2mark-1901-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="2mark-1901-fronte.jpg" data-front="2mark-1901-fronte.jpg" data-back="2mark-1901-retro.jpg" class="moneta" alt="2 Mark 1901, Re Guglielmo II (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1901</strong></p>
         </div>
 
         <!-- 2 Mark 1907 -->
         <div>
             <h4>2 Mark</h4>
-            <img src="2mark-1907-fronte.jpg" data-front="2mark-1907-fronte.jpg" data-back="2mark-1907-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="2mark-1907-fronte.jpg" data-front="2mark-1907-fronte.jpg" data-back="2mark-1907-retro.jpg" class="moneta" alt="2 Mark 1907, Re Guglielmo II (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1907</strong></p>
         </div>
-        
+
         <!-- 3 Mark 1913 -->
         <div>
             <h4>3 Mark</h4>
-            <img src="3mark-1913-fronte.jpg" data-front="3mark-1913-fronte.jpg" data-back="3mark-1913-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="3mark-1913-fronte.jpg" data-front="3mark-1913-fronte.jpg" data-back="3mark-1913-retro.jpg" class="moneta" alt="3 Mark 1913, Re Guglielmo II (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1913</strong></p>
         </div>
 
         <!-- 3 Mark 1914 -->
         <div>
             <h4>3 Mark</h4>
-            <img src="3mark-1914-fronte.jpg" data-front="3mark-1914-fronte.jpg" data-back="3mark-1914-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="3mark-1914-fronte.jpg" data-front="3mark-1914-fronte.jpg" data-back="3mark-1914-retro.jpg" class="moneta" alt="3 Mark 1914, Re Guglielmo II (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1914</strong></p>
         </div>
 
     </div>
 
-    <!-- Script per girare le monete -->
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Germania</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Germania</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Prussia (Regno)</li></ol></nav>
 </body>
 </html>

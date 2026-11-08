@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Ducato di Modena e Reggio - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducato di Modena e Reggio · Italia · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Ducato di Modena e Reggio</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Modena e Reggio</li></ol></nav>
+    <h1>Ducato di Modena e Reggio</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- MONETA: 1 Soldo 1783 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>1 Soldo</h3>
-        <img src="1soldo-fronte.jpg" data-front="1soldo-fronte.jpg" data-back="1soldo-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="1soldo-fronte.jpg" data-front="1soldo-fronte.jpg" data-back="1soldo-retro.jpg" class="moneta" alt="1 Soldo 1783 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1783</strong></p>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Modena e Reggio</li></ol></nav>
 </body>
 </html>

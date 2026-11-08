@@ -1,48 +1,38 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Confederazione Polacco-Lituana - Monete</title>
-    <!-- Torna indietro di 1 cartella per il CSS -->
-    <link rel="stylesheet" href="../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confederazione Polacco-Lituana · Le mie Monete</title>
+    <!-- Torna indietro di 1 cartella per il CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../script.js" defer></script>
 </head>
 <body>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../index.html">Home</a></li><li aria-current="page">Confederazione Polacco-Lituana</li></ol></nav>
     <h1>Confederazione Polacco-Lituana</h1>
-    <h2>Monete</h2>
+
     <hr>
-    
-    <p style="text-align: center; margin-bottom: 40px;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- SIGISMONDO III VASA -->
-    <h3 style="text-align: center; margin-top: 40px; font-size: 1.5em;">Sigismondo III Vasa (1587 - 1632)</h3>
-    
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
-        
+    <h3>Sigismondo III Vasa (1587 - 1632)</h3>
+
+    <div class="gruppo-monete">
+
         <!-- Poltorak / 3 Półker 1621 -->
         <div>
             <h4>Poltorak (3 Półker)</h4>
-            <img src="poltorak-1621-fronte.jpg" data-front="poltorak-1621-fronte.jpg" data-back="poltorak-1621-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="poltorak-1621-fronte.jpg" data-front="poltorak-1621-fronte.jpg" data-back="poltorak-1621-retro.jpg" class="moneta" alt="Poltorak (3 Półker) 1621, Sigismondo III Vasa (1587 - 1632) (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1621</strong></p>
         </div>
 
     </div>
 
-    <!-- Script per girare le monete -->
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../index.html">Home</a></li><li aria-current="page">Confederazione Polacco-Lituana</li></ol></nav>
 </body>
 </html>

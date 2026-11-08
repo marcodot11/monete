@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Seconda Repubblica Romana - Monete</title>
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seconda Repubblica Romana · Italia · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Seconda Repubblica Romana</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Seconda Repubblica Romana</li></ol></nav>
+    <h1>Seconda Repubblica Romana</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- MONETA: 3 Baiocchi 1849 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>3 Baiocchi</h3>
-        <img src="3baiocchi-fronte.jpg" data-front="3baiocchi-fronte.jpg" data-back="3baiocchi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="3baiocchi-fronte.jpg" data-front="3baiocchi-fronte.jpg" data-back="3baiocchi-retro.jpg" class="moneta" alt="3 Baiocchi 1849 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1849</strong></p>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Seconda Repubblica Romana</li></ol></nav>
 </body>
 </html>

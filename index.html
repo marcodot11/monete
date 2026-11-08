@@ -1,65 +1,43 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le mie Monete</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>World Coins</h1>
-    <h2>Seleziona la nazione</h2>
-    
-<!-- Indice delle Nazioni -->
-    <ul style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; list-style-type: none; padding: 0; margin: 0 auto; max-width: 800px; text-align: center; align-items: center;">
-        
-        <!-- Italia -->
-        <li>
-            <a href="italia/index.html" style="text-decoration: none; color: white;">
-                <img src="bandiera-italia.jpg" class="icona-bandiera" alt="Italia">
-                <br>Italia
-            </a>
-        </li>
-        
-        <!-- Albania -->
-        <li>
-            <a href="albania/index.html" style="text-decoration: none; color: white;">
-                <img src="bandiera-albania.jpg" class="icona-bandiera" alt="Albania">
-                <br>Albania
-            </a>
-        </li>
-        
-        <!-- Austria -->
-        <li>
-            <a href="austria/index.html" style="text-decoration: none; color: white;">
-                <img src="bandiera-austria.jpg" class="icona-bandiera" alt="Austria">
-                <br>Austria
-            </a>
-        </li>
-        
-        <!-- Confederazione Polacco-Lituana -->
-        <li>
-            <a href="confederazione-polacco-lituana/index.html" style="text-decoration: none; color: white;">
-                <img src="stemma-polacco-lituano.jpg" class="icona-bandiera" alt="Confederazione Polacco-Lituana">
-                <br>Confederazione<br>Polacco-Lituana
-            </a>
-        </li>
-        
-        <!-- Germania -->
-        <li>
-            <a href="germania/index.html" style="text-decoration: none; color: white;">
-                <img src="bandiera-germania.jpg" class="icona-bandiera" alt="Germania">
-                <br>Germania
-            </a>
-        </li>
-        
-        <!-- Belgio -->
-        <li>
-            <a href="belgio/index.html" style="text-decoration: none; color: white;">
-                <img src="bandiera-belgio.jpg" class="icona-bandiera" alt="Belgio">
-                <br>Belgio
-            </a>
-        </li>
+    <p class="istruzioni">Seleziona la nazione</p>
 
-    </ul>
+<!-- Indice delle Nazioni -->
+    <div class="menu-circolare">
+        <a href="italia/index.html">
+            <img src="bandiera-italia.jpg" class="icona-menu" alt="Italia">
+            Italia
+        </a>
+        <a href="albania/index.html">
+            <img src="bandiera-albania.jpg" class="icona-menu" alt="Albania">
+            Albania
+        </a>
+        <a href="austria/index.html">
+            <img src="bandiera-austria.jpg" class="icona-menu" alt="Austria">
+            Austria
+        </a>
+        <a href="confederazione-polacco-lituana/index.html">
+            <img src="stemma-polacco-lituano.jpg" class="icona-menu" alt="Confederazione Polacco-Lituana">
+            Confederazione Polacco-Lituana
+        </a>
+        <a href="germania/index.html">
+            <img src="bandiera-germania.jpg" class="icona-menu" alt="Germania">
+            Germania
+        </a>
+        <a href="belgio/index.html">
+            <img src="bandiera-belgio.jpg" class="icona-menu" alt="Belgio">
+            Belgio
+        </a>
+    </div>
 
 </body>
 </html>

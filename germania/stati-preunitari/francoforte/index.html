@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Francoforte - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francoforte · Germania · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari Tedeschi</h1>
-    <h2>Francoforte</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Germania</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Francoforte</li></ol></nav>
+    <h1>Francoforte</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- CITTÀ LIBERA -->
-    <h3 style="text-align: center; margin-top: 40px;">Città Libera</h3>
-    
+    <h3>Città Libera</h3>
+
     <!-- 20 Kreuzer 1764 (NUOVA MONETA SOPRA) -->
-    <div style="display: flex; justify-content: center; margin-bottom: 40px; text-align: center;">
+    <div class="gruppo-monete">
         <div>
             <h4>20 Kreuzer</h4>
-            <img src="20kreuzer-fronte.jpg" data-front="20kreuzer-fronte.jpg" data-back="20kreuzer-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="20kreuzer-fronte.jpg" data-front="20kreuzer-fronte.jpg" data-back="20kreuzer-retro.jpg" class="moneta" alt="20 Kreuzer 1764, Città Libera (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1764</strong></p>
         </div>
     </div>
 
     <!-- 1 Judenpfennig 1819 (MONETA ESISTENTE SOTTO) -->
-    <div style="display: flex; justify-content: center; margin-bottom: 50px; text-align: center;">
+    <div class="gruppo-monete">
         <div>
             <h4>1 Judenpfennig</h4>
             <!-- Sostituisci "1judenpfennig-fronte.jpg" con il nome esatto del tuo file se è diverso -->
-            <img src="1judenpfennig-fronte.jpg" data-front="1judenpfennig-fronte.jpg" data-back="1judenpfennig-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1judenpfennig-fronte.jpg" data-front="1judenpfennig-fronte.jpg" data-back="1judenpfennig-retro.jpg" class="moneta" alt="1 Judenpfennig 1819, Città Libera (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1819</strong></p>
         </div>
     </div>
 
-    <!-- Script per girare le monete -->
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Germania</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Germania</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Francoforte</li></ol></nav>
 </body>
 </html>
