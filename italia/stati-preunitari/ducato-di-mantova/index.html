@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Ducato di Mantova - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducato di Mantova · Italia · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Ducato di Mantova</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Mantova</li></ol></nav>
+    <h1>Ducato di Mantova</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- MONETA: 1 Sesino 1733 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>1 Sesino</h3>
-        <img src="1sesino-fronte.jpg" data-front="1sesino-fronte.jpg" data-back="1sesino-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="1sesino-fronte.jpg" data-front="1sesino-fronte.jpg" data-back="1sesino-retro.jpg" class="moneta" alt="1 Sesino 1733 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1733</strong></p>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Mantova</li></ol></nav>
 </body>
 </html>

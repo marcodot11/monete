@@ -1,89 +1,78 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Stato Pontificio - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stato Pontificio · Italia · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Stato Pontificio</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Stato Pontificio</li></ol></nav>
+    <h1>Stato Pontificio</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- PAPA BENEDETTO XIV -->
-    <h3 style="text-align: center; margin-top: 40px;">Papa Benedetto XIV</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+    <h3>Papa Benedetto XIV</h3>
+    <div class="gruppo-monete">
         <div>
             <h4>1 Baiocco</h4>
-            <img src="1baiocco-1755-fronte.jpg" data-front="1baiocco-1755-fronte.jpg" data-back="1baiocco-1755-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1baiocco-1755-fronte.jpg" data-front="1baiocco-1755-fronte.jpg" data-back="1baiocco-1755-retro.jpg" class="moneta" alt="1 Baiocco 1755, Papa Benedetto XIV (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1755</strong></p>
         </div>
         <div>
             <h4>1 Grosso</h4>
-            <img src="1grosso-1744-fronte.jpg" data-front="1grosso-1744-fronte.jpg" data-back="1grosso-1744-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1grosso-1744-fronte.jpg" data-front="1grosso-1744-fronte.jpg" data-back="1grosso-1744-retro.jpg" class="moneta" alt="1 Grosso 1744, Papa Benedetto XIV (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1744</strong></p>
         </div>
     </div>
 
     <!-- PAPA PIO VII -->
-    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Papa Pio VII</h3>
-    <div style="text-align: center; margin-bottom: 50px;">
+    <h3 class="separata">Papa Pio VII</h3>
+    <div class="scheda-moneta">
         <h4>1 Baiocco</h4>
-        <img src="1baiocco-1801-fronte.jpg" data-front="1baiocco-1801-fronte.jpg" data-back="1baiocco-1801-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="1baiocco-1801-fronte.jpg" data-front="1baiocco-1801-fronte.jpg" data-back="1baiocco-1801-retro.jpg" class="moneta" alt="1 Baiocco 1801, Papa Pio VII (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1801</strong></p>
     </div>
 
     <!-- PAPA PIO IX -->
-    <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Papa Pio IX</h3>
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+    <h3 class="separata">Papa Pio IX</h3>
+    <div class="gruppo-monete">
         <div>
             <h4>½ Baiocco</h4>
-            <img src="mezzo-baiocco-1851-fronte.jpg" data-front="mezzo-baiocco-1851-fronte.jpg" data-back="mezzo-baiocco-1851-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="mezzo-baiocco-1851-fronte.jpg" data-front="mezzo-baiocco-1851-fronte.jpg" data-back="mezzo-baiocco-1851-retro.jpg" class="moneta" alt="½ Baiocco 1851, Papa Pio IX (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1851</strong></p>
         </div>
             <!-- 2 Baiocchi 1849 -->
         <div>
             <h4>2 Baiocchi</h4>
-            <img src="2baiocchi-fronte.jpg" data-front="2baiocchi-fronte.jpg" data-back="2baiocchi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="2baiocchi-fronte.jpg" data-front="2baiocchi-fronte.jpg" data-back="2baiocchi-retro.jpg" class="moneta" alt="2 Baiocchi 1849, Papa Pio IX (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1849</strong></p>
         </div>
         <div>
             <h4>5 Baiocchi</h4>
-            <img src="5baiocchi-1850-fronte.jpg" data-front="5baiocchi-1850-fronte.jpg" data-back="5baiocchi-1850-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="5baiocchi-1850-fronte.jpg" data-front="5baiocchi-1850-fronte.jpg" data-back="5baiocchi-1850-retro.jpg" class="moneta" alt="5 Baiocchi 1850, Papa Pio IX (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1850</strong></p>
         </div>
         <div>
             <h4>1 Soldo</h4>
-            <img src="1soldo-1867-fronte.jpg" data-front="1soldo-1867-fronte.jpg" data-back="1soldo-1867-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="1soldo-1867-fronte.jpg" data-front="1soldo-1867-fronte.jpg" data-back="1soldo-1867-retro.jpg" class="moneta" alt="1 Soldo 1867, Papa Pio IX (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1867</strong></p>
         </div>
         <div>
             <h4>4 Soldi</h4>
-            <img src="4soldi-1866-fronte.jpg" data-front="4soldi-1866-fronte.jpg" data-back="4soldi-1866-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="4soldi-1866-fronte.jpg" data-front="4soldi-1866-fronte.jpg" data-back="4soldi-1866-retro.jpg" class="moneta" alt="4 Soldi 1866, Papa Pio IX (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1866</strong></p>
         </div>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Stato Pontificio</li></ol></nav>
 </body>
 </html>

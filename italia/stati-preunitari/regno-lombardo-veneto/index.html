@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Regno Lombardo-Veneto - Monete</title>
-    <!-- Torna indietro di 3 cartelle per il CSS -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regno Lombardo-Veneto · Italia · Le mie Monete</title>
+    <!-- Torna indietro di 3 cartelle per il CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Regno Lombardo-Veneto</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Regno Lombardo-Veneto</li></ol></nav>
+    <h1>Regno Lombardo-Veneto</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- PRIMA RIGA: 1 Centesimo 1822 da solo -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>1 Centesimo</h3>
-        <img src="1cent-fronte.jpg" data-front="1cent-fronte.jpg" data-back="1cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="1cent-fronte.jpg" data-front="1cent-fronte.jpg" data-back="1cent-retro.jpg" class="moneta" alt="1 Centesimo 1822 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1822</strong></p>
     </div>
 
     <!-- SECONDA RIGA: 3 Centesimi e 5 Centesimi affiancati -->
-    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
-        
+    <div class="gruppo-monete">
+
         <!-- Moneta di sinistra -->
         <div>
             <h3>3 Centesimi</h3>
-            <img src="3cent-fronte.jpg" data-front="3cent-fronte.jpg" data-back="3cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="3cent-fronte.jpg" data-front="3cent-fronte.jpg" data-back="3cent-retro.jpg" class="moneta" alt="3 Centesimi 1852 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1852</strong></p>
         </div>
 
         <!-- Moneta di destra -->
         <div>
             <h3>5 Centesimi</h3>
-            <img src="5cent-fronte.jpg" data-front="5cent-fronte.jpg" data-back="5cent-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="5cent-fronte.jpg" data-front="5cent-fronte.jpg" data-back="5cent-retro.jpg" class="moneta" alt="5 Centesimi 1848 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1848</strong></p>
         </div>
 
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Regno Lombardo-Veneto</li></ol></nav>
 </body>
 </html>

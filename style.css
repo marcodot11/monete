@@ -1,64 +1,114 @@
+/* ==========================================================
+   Le mie Monete - foglio di stile unico per tutte le pagine
+   ========================================================== */
+
+/* --- Colori usati in tutto il sito --- */
+:root {
+    --testo: #ffffff;
+    --testo-tenue: #c8c8c8;
+    --linea: #555555;
+    --accento: #e0c068;   /* oro tenue, per il focus da tastiera */
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    /* Imposta l'immagine di sfondo con un filtro scuro (gradient) sopra */
+    /* Immagine di sfondo con un filtro scuro sopra */
+    background-color: #111;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('sfondo.jpg');
-    background-size: cover; /* Fa in modo che l'immagine copra tutto lo schermo */
-    background-position: center; /* Centra l'immagine */
-    background-attachment: fixed; /* Mantiene lo sfondo fermo mentre scorri la pagina verso il basso */
-    color: white; /* Assicura che tutto il testo sia bianco */
-    font-family: Arial, sans-serif; /* Mantieni il tuo font, questo è un esempio */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Lo sfondo resta fermo mentre scorri */
+    color: var(--testo);
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
     margin: 0;
     padding: 20px;
 }
-}
-img {
-    width: 250px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-/* Rimuove la sottolineatura blu brutta dai link e li fa diventare bianchi */
+
+/* Link bianchi senza sottolineatura; la sottolineatura appare al passaggio del mouse */
 a {
-    color: #ffffff;
+    color: var(--testo);
     text-decoration: none;
 }
 
-/* Quando passi col mouse sul link, riappare la sottolineatura */
 a:hover {
     text-decoration: underline;
 }
 
-/* Crea le colonne per la lista delle nazioni */
-.griglia-nazioni {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Il '3' indica il numero di colonne! */
-    gap: 15px; /* Spazio tra una nazione e l'altra */
-    list-style-type: none; /* Toglie i pallini neri della lista */
-    padding: 0;
-    max-width: 600px; /* Evita che le colonne si allarghino troppo sugli schermi grandi */
-    margin: 40px auto; /* Centra tutto il blocco nella pagina */
-    text-align: left; /* Allinea il testo di ogni colonna a sinistra */
-    font-size: 1.3em;
-}
-/* Contenitore a scorrimento orizzontale per le monete */
-.fila-monete {
-    display: flex;
-    gap: 30px; /* Spazio tra una moneta e l'altra */
-    overflow-x: auto; /* Aggiunge la barra di scorrimento se ci sono troppe monete */
-    padding: 20px 0;
-    justify-content: center; /* Centra le monete se sono poche */
-    align-items: flex-end;
+/* Contorno ben visibile per chi naviga con la tastiera */
+a:focus-visible,
+.moneta:focus-visible {
+    outline: 2px solid var(--accento);
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
-.moneta-singola {
-    text-align: center;
-    flex-shrink: 0;
+h1 {
+    margin: 10px 0 15px;
 }
-/* Stile per i menu con foto circolari (es. Re o Repubbliche) */
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--linea);
+    margin: 20px 0;
+}
+
+/* --- Percorso di navigazione (Home › Italia › ...) --- */
+.percorso ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95em;
+    color: var(--testo-tenue);
+}
+
+.percorso li + li::before {
+    content: "›";
+    margin: 0 8px;
+    color: var(--linea);
+}
+
+.percorso a {
+    color: var(--testo-tenue);
+    text-decoration: underline;
+    text-decoration-color: var(--linea);
+    text-underline-offset: 3px;
+}
+
+.percorso a:hover {
+    color: var(--testo);
+    text-decoration-color: var(--testo);
+}
+
+.percorso [aria-current="page"] {
+    color: var(--testo);
+}
+
+.percorso-fondo {
+    margin-top: 10px;
+}
+
+/* --- Frasi di aiuto ("Seleziona...", "Clicca sulle monete...") --- */
+.istruzioni {
+    text-align: center;
+    color: var(--testo-tenue);
+    margin: 20px 0 40px;
+}
+
+/* --- Menu con foto circolari (nazioni, periodi, sovrani...) --- */
 .menu-circolare {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     margin: 40px auto;
-    flex-wrap: wrap;
+    max-width: 1100px;
 }
 
 .menu-circolare a {
@@ -66,6 +116,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px; /* Spazio tra la foto e il nome */
+    width: 160px;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -77,70 +129,96 @@ a:hover {
     transition: transform 0.2s;
 }
 
-.icona-menu:hover {
-    transform: scale(1.1); /* Ingrandisce leggermente la foto al passaggio del mouse */
-}
-/* Stile per l'elenco delle nazioni (stile indice enciclopedico) */
-.lista-nazioni {
-    column-count: 3; /* Crea le 3 colonne come nella foto */
-    column-gap: 40px;
-    list-style-type: none; /* Nasconde i classici puntini elenco */
-    padding: 0;
-    max-width: 900px;
-    margin: 40px auto;
+.menu-circolare a:hover .icona-menu,
+.menu-circolare a:focus-visible .icona-menu {
+    transform: scale(1.1);
 }
 
-.lista-nazioni li {
-    margin-bottom: 12px;
-    break-inside: avoid; /* Evita che una voce venga spezzata tra due colonne */
+/* --- Titoli dentro le pagine delle monete --- */
+
+/* Sezioni (es. "Monetazione in Lire", "Papa Pio IX") */
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 40px 0 20px;
 }
 
-.lista-nazioni a {
+/* Sezione separata dalla precedente con una linea */
+h3.separata {
+    border-top: 1px solid var(--linea);
+    padding-top: 30px;
+}
+
+/* Nome del taglio sopra una fila di monete (es. "1 Lira") */
+.taglio {
+    text-align: left;
+    margin: 0 0 10px 10%;
+}
+
+/* --- Monete --- */
+
+/* Fila di monete affiancate */
+.gruppo-monete {
     display: flex;
-    align-items: center;
-    gap: 12px; /* Spazio tra la bandierina e il nome della nazione */
-    font-size: 18px;
-    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-/* Stile per le mini bandiere circolari */
-.icona-bandiera {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    object-fit: cover;
+/* Moneta da sola (con titolo, foto e anno) */
+.scheda-moneta {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-/* Adatta le colonne sugli schermi piccoli dei telefoni */
-@media (max-width: 768px) {
-    .lista-nazioni {
-        column-count: 2;
-    }
+/* Anni sotto le monete */
+.gruppo-monete p,
+.scheda-moneta p {
+    font-weight: bold;
 }
-@media (max-width: 480px) {
-    .lista-nazioni {
-        column-count: 1;
-    }
-}
-/* Rimpicciolisce tutte le immagini delle monete che hanno l'animazione fronte/retro */
-img[data-front] {
+
+/* Foto della moneta: clic per vedere il retro */
+.moneta {
+    display: block;
+    margin: 0 auto;
     width: 180px;
     height: 180px;
     object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
 }
-/* --- OTTIMIZZAZIONE PER SMARTPHONE --- */
+
+/* --- Telefoni --- */
 @media (max-width: 600px) {
-    /* L'asterisco cattura QUALSIASI tag HTML che usa il flex, non solo i div! */
-    *[style*="flex"] {
-        gap: 15px !important; 
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        max-width: 100vw !important;
+    body {
+        padding: 16px;
     }
 
-    img[data-front] {
-        width: 100px !important;
-        height: 100px !important;
+    .menu-circolare {
+        gap: 24px 16px;
     }
-}
+
+    .menu-circolare a {
+        width: 130px;
+    }
+
+    .icona-menu {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gruppo-monete {
+        gap: 15px;
+    }
+
+    .moneta {
+        width: 100px;
+        height: 100px;
+    }
+
+    .taglio {
+        margin-left: 0;
+    }
 }

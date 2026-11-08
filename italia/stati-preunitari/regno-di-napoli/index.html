@@ -1,62 +1,51 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Regno di Napoli - Monete</title>
-    <link rel="stylesheet" href="../../../style.css"> 
-    
-    <!-- AGGIUNGI QUESTA RIGA: Adatta la pagina agli schermi dei telefoni -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regno di Napoli · Italia · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <!-- AGGIUNGI QUESTA RIGA: Adatta la pagina agli schermi dei telefoni -->
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Stati Preunitari</h1>
-    <h2>Regno di Napoli</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Regno di Napoli</li></ol></nav>
+    <h1>Regno di Napoli</h1>
+
     <hr>
-    
-    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+    <p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- PRIMA RIGA: 3 Tornesi e 6 Tornesi affiancati -->
-    <div style="display: flex; justify-content: center; gap: 80px; margin-bottom: 50px; text-align: center;">
-        
+    <div class="gruppo-monete">
+
         <!-- Moneta di sinistra -->
         <div>
             <h3>3 Tornesi</h3>
-            <img src="3tornesi-fronte.jpg" data-front="3tornesi-fronte.jpg" data-back="3tornesi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="3tornesi-fronte.jpg" data-front="3tornesi-fronte.jpg" data-back="3tornesi-retro.jpg" class="moneta" alt="3 Tornesi 1790 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1790</strong></p>
         </div>
 
         <!-- Moneta di destra -->
         <div>
             <h3>6 Tornesi</h3>
-            <img src="6tornesi-fronte.jpg" data-front="6tornesi-fronte.jpg" data-back="6tornesi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <img src="6tornesi-fronte.jpg" data-front="6tornesi-fronte.jpg" data-back="6tornesi-retro.jpg" class="moneta" alt="6 Tornesi 1801 (fronte)" width="180" height="180" loading="lazy" decoding="async">
             <p><strong>1801</strong></p>
         </div>
 
     </div>
 
     <!-- SECONDA RIGA: 2 Lire da sola -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>2 Lire</h3>
-        <img src="2lire-fronte.jpg" data-front="2lire-fronte.jpg" data-back="2lire-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="2lire-fronte.jpg" data-front="2lire-fronte.jpg" data-back="2lire-retro.jpg" class="moneta" alt="2 Lire 1813 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1813</strong></p>
     </div>
 
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
-
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Regno di Napoli</li></ol></nav>
 </body>
 </html>

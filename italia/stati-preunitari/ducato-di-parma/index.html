@@ -1,47 +1,37 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="it">
 <head>
-    <title>Ducato di Parma - Le mie Monete</title>
-    <link rel="stylesheet" href="../../../style.css"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducato di Parma · Italia · Le mie Monete</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
-    <h1>Le monete di Marco</h1>
-    <h2>Ducato di Parma</h2>
+    <nav class="percorso" aria-label="Percorso"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Parma</li></ol></nav>
+    <h1>Ducato di Parma</h1>
+
     <hr>
-    
-<p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+
+<p class="istruzioni">Clicca sulle monete per vedere il retro</p>
 
     <!-- PRIMA MONETA: 1 Sesino 1788 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>1 Sesino</h3>
-        <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="fronte.jpg" data-front="fronte.jpg" data-back="retro.jpg" class="moneta" alt="1 Sesino 1788 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1788</strong></p>
     </div>
 
     <!-- SECONDA MONETA: 10 Soldi 1815 -->
-    <div style="text-align: center; margin-bottom: 50px;">
+    <div class="scheda-moneta">
         <h3>10 Soldi</h3>
-        <img src="10soldi-fronte.jpg" data-front="10soldi-fronte.jpg" data-back="10soldi-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+        <img src="10soldi-fronte.jpg" data-front="10soldi-fronte.jpg" data-back="10soldi-retro.jpg" class="moneta" alt="10 Soldi 1815 (fronte)" width="180" height="180" loading="lazy" decoding="async">
         <p><strong>1815</strong></p>
     </div>
-    <script>
-        function giraMoneta(img) {
-            let attuale = img.getAttribute('src');
-            let fronte = img.getAttribute('data-front');
-            let retro = img.getAttribute('data-back');
 
-            if (attuale === fronte) {
-                img.setAttribute('src', retro);
-            } else {
-                img.setAttribute('src', fronte);
-            }
-        }
-    </script>
-
-    <br><br><hr>
-    <a href="../index.html">Torna a Stati Preunitari</a><br>
-    <a href="../../index.html">Torna a Italia</a><br>
-    <a href="../../../index.html">Torna alla Home</a>
+    <hr>
+    <nav class="percorso percorso-fondo" aria-label="Percorso (fondo pagina)"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../index.html">Italia</a></li><li><a href="../index.html">Stati Preunitari</a></li><li aria-current="page">Ducato di Parma</li></ol></nav>
 </body>
 </html>
