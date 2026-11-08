@@ -11,7 +11,7 @@
     <h2>Regno delle Due Sicilie</h2>
     <hr>
 
-<p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
+    <p style="text-align: center;">Clicca sulle monete per vedere il retro</p>
 
     <!-- RE FERDINANDO II -->
     <h3 style="text-align: center; margin-top: 40px;">Ferdinando II</h3>
@@ -51,13 +51,23 @@
 
     <!-- RE FRANCESCO II -->
     <h3 style="text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;">Francesco II</h3>
-    <div style="text-align: center; margin-bottom: 50px;">
-        <h4>2 Tornesi</h4>
-        <img src="2tornesi-1859-fronte.jpg" data-front="2tornesi-1859-fronte.jpg" data-back="2tornesi-1859-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
-        <p><strong>1859</strong></p>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; text-align: center; flex-wrap: wrap;">
+        
+        <div>
+            <h4>2 Tornesi</h4>
+            <img src="2tornesi-1859-fronte.jpg" data-front="2tornesi-1859-fronte.jpg" data-back="2tornesi-1859-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1859</strong></p>
+        </div>
+
+        <div>
+            <h4>10 Tornesi</h4>
+            <img src="10tornesi-1849-fronte.jpg" data-front="10tornesi-1849-fronte.jpg" data-back="10tornesi-1849-retro.jpg" onclick="giraMoneta(this)" style="border-radius: 50%; cursor: pointer;">
+            <p><strong>1849</strong></p>
+        </div>
+
     </div>
-    </script>
-<script>
+
+    <script>
         function giraMoneta(img) {
             let attuale = img.getAttribute('src');
             let fronte = img.getAttribute('data-front');
@@ -70,6 +80,7 @@
             }
         }
     </script>
+    
     <br><br><hr>
     <a href="../index.html">Torna a Stati Preunitari</a><br>
     <a href="../../index.html">Torna a Italia</a><br>
