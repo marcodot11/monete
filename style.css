@@ -129,6 +129,31 @@ hr {
     transition: transform 0.2s;
 }
 
+/* Ritratti dei sovrani: tiene il volto (in alto) dentro il cerchio */
+.icona-menu.ritratto {
+    object-position: center 15%;
+}
+
+/* --- Home: scorciatoie verso i continenti --- */
+.continenti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+    margin: -20px 0 20px;
+}
+
+.continenti a {
+    color: var(--testo-tenue);
+    text-decoration: underline;
+    text-decoration-color: var(--linea);
+    text-underline-offset: 3px;
+}
+
+.continenti a:hover {
+    color: var(--testo);
+}
+
 .menu-circolare a:hover .icona-menu,
 .menu-circolare a:focus-visible .icona-menu {
     transform: scale(1.1);
