@@ -192,6 +192,20 @@ h3.separata {
     text-align: center;
 }
 
+/* Ogni moneta della fila resta stretta anche con descrizioni lunghe */
+.gruppo-monete > div {
+    max-width: 200px;
+}
+
+/* Descrizione sotto l'anno (es. occasione di un 2 Euro commemorativo) */
+.nota-moneta {
+    display: block;
+    margin-top: 4px;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: var(--testo-tenue);
+}
+
 /* Moneta da sola (con titolo, foto e anno) */
 .scheda-moneta {
     text-align: center;
